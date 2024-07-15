@@ -1,8 +1,18 @@
+const { inlineKeyboard, button } = require("telegraf/markup");
 const { bot } = require("../core/bot");
 
-// Botni ishga tushirish
-bot.start(async (ctx) => {
-  ctx.reply(`Salom, ${ctx.message.from.first_name}!`);
+// Botni i shga tushirish
+bot.start((ctx) => {
+
+  ctx.replyWithHTML(
+    `Assalamu alaykum va rohmatulloh! <b>${ctx.message.from.first_name}</b> \n
+Man guruhdagi yangi a'zolarni kirdi-chiqdi malumotlarini arxivdan tozalab turaman🙂
+\nMeni ishlashim uchun guruhingizga admin qilishingiz kerak! 😀
+\nAlloh taollo hamkorligimizni xayrli qilsin! 🤝`,
+    inlineKeyboard([
+      button.url("➕ GURUHGA QO'SHISH", "https://t.me/Nimadurbot?startgroup=start"),
+    ])
+  );
 });
 
 // Guruhga yangi a'zo qo'shilganda o'chirish
