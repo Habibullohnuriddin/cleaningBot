@@ -10,7 +10,7 @@ Man guruhdagi yangi a'zolarni kirdi-chiqdi malumotlarini arxivdan tozalab turama
 \nMeni ishlashim uchun guruhingizga admin qilishingiz kerak! 😀
 \nAlloh taollo hamkorligimizni xayrli qilsin! 🤝`,
     inlineKeyboard([
-      button.url("➕ GURUHGA QO'SHISH", "https://t.me/Nimadurbot?startgroup=start"),
+      button.url("➕ GURUHGA QO'SHISH", "https://t.me/Kirdichiqdi_tozalaydiganbot?startgroup=start"),
     ])
   );
 });
